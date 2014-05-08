@@ -33,22 +33,22 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
          <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+          </button> -->
           <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo"></a>
         </div>
-        <div class="navbar-collapse collapse">
+        <!-- <div class="navbar-collapse collapse">
           
-          <ul class="nav navbar-nav navbar-right">
+          /*<ul class="nav navbar-nav navbar-right">
             <li><a href="../navbar/">Default</a></li>
             <li><a href="../navbar-static-top/">Static top</a></li>
             <li class="active"><a href="./">Fixed top</a></li>
           </ul>
-         </div><!--/.nav-collapse -->
+         </div> <!--/.nav-collapse -->
         </div>
       </div>
 
@@ -71,7 +71,7 @@
       </div>
       <div class="tab-content">
         <div class="tab-pane fade active" id="signin">
-          <form class="form-signin" role="form">
+          <form class="form-signin" role="form" action="index.php">
             <h2 class="form-signin-heading">Inicio</h2>
             <input name="" type="email" class="form-control" placeholder="Email o nombre de usuario" required autofocus>
             <input type="password" class="form-control" placeholder="Contraseña" required>
@@ -85,40 +85,40 @@
         <div class="tab-pane fade" id="signup">
           
 
-           <form class="form-signup" role="form" method="post" action="">
+           <form class="form-signup" role="form" method="post" action="index.php">
              
              <h2 class="form-signup-heading">Registro</h3>
 
               <div class="form-group">
   <!--   <label for="exampleInputEmail1">Nombre</label> -->
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre" required active>
+    <input id="name" name="name" type="text" class="form-control"  placeholder="Nombre" required active>
   </div>
 
                <div class="form-group">
     <!-- <label for="exampleInputEmail1">Apellido</label> -->
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido" required>
+    <input id="lastname" name="lastname" type="text" class="form-control"  placeholder="Apellido" required>
   </div>
                 <div class="form-group">
    <!--  <label for="exampleInputEmail1">Nombre de usuario</label> -->
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre de usuario" required>
+    <input id="username" name="username" type="text" class="form-control"  placeholder="Nombre de usuario" required>
   </div>
                
                 <div class="form-group">
     <!-- <label for="exampleInputEmail1">Email</label> -->
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+    <input id="e-mail" name="e-mail" type="email" class="form-control"  placeholder="Email" required>
   </div>
             
               <div class="form-group">
     <!-- <label for="exampleInputEmail1">Contraseña</label> -->
-    <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Contraseña" required>
+    <input id="password" name="Password" type="password" class="form-control"  placeholder="Contraseña" required>
   </div>
 
               <div class="form-group">
     <!-- <label for="exampleInputEmail1">Repite la contraseña</label> -->
-    <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Repite la contraseña" required>
+    <input type="password" class="form-control"  placeholder="Repite la contraseña" required>
   </div>
            
-
+<input type="hidden" name="formsubmitted" value="TRUE">
               <button class="btn btn-lg btn-danger btn-block no-border" type="submit">Registrarse</button>
             </div>
           </form>

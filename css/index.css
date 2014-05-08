@@ -79,31 +79,6 @@ body {
   border-radius: 0px;
 }
 
-@media (min-width: 700px){
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 70px;
-    height: 70px;
-    padding-top: 0;
-}
-    .jumbotron{
-  text-align: center;
-height: 300px;
-}
-
-h1{
-  line-height: 2;
-  }
-.navbar-brand{
-    font-size: 3em;
-    padding: 0px;
-  }
-
-  .logo{
-    height: 100%;
-  }
-}
-
 .nav-tabs > li, .nav-pills > li {
     float:none;
     display:inline-block;
@@ -119,11 +94,44 @@ h1{
 .jumbotron{
   text-align: center;
 }
+.logo{
+  height: 90%;
+  padding: 0px;
+  padding-bottom: 10px;
+  margin: 0px;
+  vertical-align: middle;
+
+}
+
+@media (min-width: 700px){
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 70px;
+    height: 70px;
+    padding: 0px;
+}
+    .jumbotron{
+  text-align: center;
+height: 300px;
+}
+
+h1{
+  line-height: 2;
+  }
+
+
+  .logo{
+    height: 100%;
+    padding-bottom: 0px;
+  }
+}
+
 
 @media (max-width: 450px){
 
   .logo{
-    height: 140%;
+    height: 100%;
+padding-bottom: 0px;
 
   }
 
@@ -131,14 +139,7 @@ h1{
 .navbar-nav li a {
     line-height: 50px;
     height: 50px;
-    padding-top: 0;
-}
+    padding: 0px;
+  }
 }
 
-.logo{
-  height: 90%;
-  padding: 0px;
-  margin: 0px;
-  vertical-align: middle;
-
-}
